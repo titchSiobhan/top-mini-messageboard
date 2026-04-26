@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Messageboard <%= message.id %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="singleMessage">
+    
+<p class="message"><%= message.text %></p>
+<h1><%= message.user %></h1>
+<p><%= message.added.toLocaleString() %></p>
+
+<a href="/" class="open">Back</a>
+</div>
+</body>
+</html>
