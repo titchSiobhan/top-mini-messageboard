@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('node:path')
-const port = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 const newRoute = require('./routes/newRoutes');
 const messageRouter =require('./routes/index');
 const assetsPath = path.join(__dirname, "public");
@@ -33,4 +33,4 @@ app.get('/message/:id', (req, res) => {
 })
 
 
-app.listen(port)
+app.listen(PORT)
